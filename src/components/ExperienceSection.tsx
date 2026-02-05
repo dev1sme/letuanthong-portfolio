@@ -12,13 +12,27 @@ const ExperienceSection = () => {
 
   const experienceData = [
     {
-      title: 'Backend Engineer',
-      company: t('Công ty cổ phần Én Việt', 'En Viet Joint Stock Company'),
-      period: t('04/2024 - Hiện tại', '04/2024 - Present'),
+      title: 'Software Engineer',
+      company: 'CYBiDGE CORPORATION',
+      period: t('12/2025 - Hiện tại', '12/2025 - Present'),
       location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
       current: true,
       responsibilities: [
-        t('Quản lý dự án phát triển web và mobile', 'Managing web and mobile development projects'),
+        t('Phát triển và bảo trì các ứng dụng enterprise-level', 'Developing and maintaining enterprise-level applications'),
+        t('Thiết kế kiến trúc hệ thống và microservices', 'Designing system architecture and microservices'),
+        t('Tối ưu hóa hiệu suất và khả năng mở rộng của hệ thống', 'Optimizing system performance and scalability'),
+        t('Phối hợp với team quốc tế trong môi trường đa văn hóa', 'Collaborating with international teams in multicultural environment'),
+        t('Áp dụng best practices và design patterns trong phát triển phần mềm', 'Applying best practices and design patterns in software development'),
+      ],
+      techStack: ['Java', 'Spring Boot', 'React', 'TypeScript', 'AWS', 'Docker', 'Kubernetes'],
+    },
+    {
+      title: 'Software Engineer',
+      company: t('Công ty cổ phần Én Việt', 'En Viet Joint Stock Company'),
+      period: '01/2025 - 11/2025',
+      location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
+      current: false,
+      responsibilities: [
         t('Phát triển backend với Java và Spring Boot', 'Developing backend with Java and Spring Boot'),
         t('Thiết kế và tối ưu hóa API/web service', 'Designing and optimizing API/web services'),
         t('Làm việc với cơ sở dữ liệu MySQL và PostgreSQL', 'Working with MySQL and PostgreSQL databases'),
@@ -28,7 +42,7 @@ const ExperienceSection = () => {
       techStack: ['Java', 'Spring Boot', 'MySQL', 'PostgreSQL', 'Docker', 'Redis'],
     },
     {
-      title: 'Backend Engineer',
+      title: 'Software Engineer',
       company: 'AhaMove',
       period: '10/2023 - 03/2024',
       location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
@@ -42,6 +56,20 @@ const ExperienceSection = () => {
       ],
       techStack: ['Java', 'Spring Boot', 'MongoDB', 'Kafka', 'AWS', 'Microservices'],
     },
+    {
+      title: 'Software Engineer',
+      company: t('Công ty cổ phần Én Việt', 'En Viet Joint Stock Company'),
+      period: '04/2024 - 06/2024',
+      location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
+      current: false,
+      responsibilities: [
+        t('Quản lý dự án phát triển web và mobile', 'Managing web and mobile development projects'),
+        t('Phát triển backend với Java và Spring Boot', 'Developing backend with Java and Spring Boot'),
+        t('Thiết kế và tối ưu hóa API/web service', 'Designing and optimizing API/web services'),
+        t('Làm việc với cơ sở dữ liệu MySQL và PostgreSQL', 'Working with MySQL and PostgreSQL databases'),
+      ],
+      techStack: ['Java', 'Spring Boot', 'MySQL', 'PostgreSQL', 'Docker'],
+    },
   ];
 
   return (
@@ -54,7 +82,7 @@ const ExperienceSection = () => {
           className="text-center mb-16"
         >
           <h2 className="section-heading">
-            <span className="text-primary font-mono text-lg font-normal">03.</span>{' '}
+            <span className="text-primary font-mono text-lg font-normal">02.</span>{' '}
             {t('Kinh nghiệm', 'Experience')}
           </h2>
           <p className="section-subheading">{t('Hành trình nghề nghiệp của tôi', 'My professional journey')}</p>
@@ -80,12 +108,12 @@ const ExperienceSection = () => {
                       <Briefcase className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <div className="flex items-center gap-3 mb-1">
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-1">
                         <h3 className="text-xl font-heading font-semibold text-foreground">
                           {exp.title}
                         </h3>
                         {exp.current && (
-                          <span className="px-2 py-0.5 text-xs rounded-full bg-primary/20 text-primary font-medium">
+                          <span className="px-2 py-0.5 text-xs rounded-full bg-primary/20 text-primary font-medium whitespace-nowrap">
                             {t('Hiện tại', 'Current')}
                           </span>
                         )}

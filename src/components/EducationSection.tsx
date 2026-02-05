@@ -61,7 +61,7 @@ const EducationSection = () => {
           className="text-center mb-16"
         >
           <h2 className="section-heading">
-            <span className="text-primary font-mono text-lg font-normal">02.</span>{' '}
+            <span className="text-primary font-mono text-lg font-normal">03.</span>{' '}
             {t('Học vấn', 'Education')}
           </h2>
           <p className="section-subheading">{t('Quá trình học tập của tôi', 'My educational journey')}</p>
