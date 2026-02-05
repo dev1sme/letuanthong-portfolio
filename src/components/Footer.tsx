@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
           className="flex flex-col items-center text-center"
         >
           {/* Social Links */}
-          <div className="flex gap-6 mb-8">
+          <div className="flex gap-4 mb-8 flex-wrap justify-center">
             <a
               href="https://github.com"
               target="_blank"
@@ -35,6 +35,33 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} />
+            </a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="X (Twitter)"
+            >
+              <Twitter size={20} />
             </a>
             <a
               href="mailto:letuanthong350@gmail.com"

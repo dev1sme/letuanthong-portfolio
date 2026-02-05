@@ -41,17 +41,17 @@ const Header = () => {
         isScrolled ? 'bg-background/80 backdrop-blur-lg border-b border-border/50' : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Language & Theme Switcher */}
-          <div className="flex items-center gap-2">
+      <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div className="flex items-center justify-between gap-2">
+          {/* Language & Theme Switcher - responsive */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
             <LanguageSwitcher />
             <ThemeSwitcher />
           </div>
 
           {/* Desktop Navigation */}
           <motion.ul
-            className="hidden md:flex items-center gap-8"
+            className="hidden lg:flex items-center gap-4 xl:gap-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -60,7 +60,7 @@ const Header = () => {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="nav-link text-sm font-medium"
+                  className="nav-link text-xs xl:text-sm font-medium whitespace-nowrap"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNavClick(item.href);
@@ -75,7 +75,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-foreground hover:text-primary transition-colors flex-shrink-0"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -87,13 +87,13 @@ const Header = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border"
+              className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-lg border-b border-border"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <ul className="flex flex-col py-4 px-6">
+              <ul className="flex flex-col py-4 px-4 sm:px-6">
                 {navItems.map((item, index) => (
                   <li key={item.href}>
                     <a

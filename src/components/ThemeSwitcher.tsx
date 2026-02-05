@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
 
   return (
     <motion.div
-      className="flex items-center gap-1 p-1 rounded-lg bg-secondary/50 border border-border/50"
+      className="flex items-center p-0.5 sm:p-1 rounded-md sm:rounded-lg bg-secondary/50 border border-border/50"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
@@ -22,7 +22,7 @@ const ThemeSwitcher = () => {
         <button
           key={value}
           onClick={() => setTheme(value)}
-          className={`p-2 rounded-md transition-all duration-300 ${
+          className={`p-1.5 sm:p-2 rounded transition-all duration-300 ${
             theme === value
               ? 'bg-primary/20 text-primary'
               : 'text-muted-foreground hover:text-foreground'
@@ -30,7 +30,7 @@ const ThemeSwitcher = () => {
           aria-label={label}
           title={label}
         >
-          <Icon size={16} />
+          <Icon size={14} className="sm:w-4 sm:h-4" />
         </button>
       ))}
     </motion.div>
