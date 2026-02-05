@@ -1,7 +1,8 @@
 import { motion, Variants } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin, Download, ArrowDown } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Download, ArrowDown, Instagram, Facebook, Twitter } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import sampleAvatar from '@/assets/sample-avatar.svg';
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -47,7 +48,7 @@ const HeroSection = () => {
           {/* Avatar */}
           <motion.div variants={itemVariants} className="mb-8">
             <Avatar className="w-32 h-32 mx-auto border-4 border-primary/20 shadow-lg">
-              <AvatarImage src="/placeholder.svg" alt="Lê Tuấn Thông" />
+              <AvatarImage src={sampleAvatar} alt="Lê Tuấn Thông" />
               <AvatarFallback className="text-3xl font-heading font-bold bg-primary text-primary-foreground">
                 LTT
               </AvatarFallback>
@@ -75,7 +76,7 @@ const HeroSection = () => {
             className="text-3xl md:text-4xl lg:text-5xl font-heading font-semibold text-muted-foreground mb-8"
             variants={itemVariants}
           >
-            Backend Engineer
+            Software Engineer
           </motion.h2>
 
           {/* Description */}
@@ -131,7 +132,7 @@ const HeroSection = () => {
 
           {/* Social Links */}
           <motion.div
-            className="flex justify-center gap-6"
+            className="flex justify-center gap-4 flex-wrap"
             variants={itemVariants}
           >
             <a
@@ -151,6 +152,33 @@ const HeroSection = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
+              aria-label="Instagram"
+            >
+              <Instagram size={24} />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
+              aria-label="Facebook"
+            >
+              <Facebook size={24} />
+            </a>
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
+              aria-label="X (Twitter)"
+            >
+              <Twitter size={24} />
             </a>
           </motion.div>
         </motion.div>
