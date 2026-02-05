@@ -112,7 +112,7 @@ const SkillsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="section-heading">
-            <span className="text-primary font-mono text-lg font-normal">04.</span>{' '}
+            <span className="text-primary font-mono text-lg font-normal">03.</span>{' '}
             {t('Kỹ năng', 'Skills')}
           </h2>
           <p className="section-subheading">{t('Những gì tôi có thể làm', 'What I can do')}</p>

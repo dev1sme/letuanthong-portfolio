@@ -11,9 +11,9 @@ const Header = () => {
   const navItems = [
     { label: t('Trang chủ', 'Home'), href: '#home' },
     { label: t('Giới thiệu', 'About'), href: '#about' },
-    { label: t('Học vấn', 'Education'), href: '#education' },
     { label: t('Kinh nghiệm', 'Experience'), href: '#experience' },
     { label: t('Kỹ năng', 'Skills'), href: '#skills' },
+    { label: t('Học vấn', 'Education'), href: '#education' },
     { label: t('Dự án', 'Projects'), href: '#projects' },
     { label: t('Liên hệ', 'Contact'), href: '#contact' },
   ];

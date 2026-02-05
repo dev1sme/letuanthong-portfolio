@@ -43,6 +43,20 @@ const ExperienceSection = () => {
     },
     {
       title: 'Software Engineer',
+      company: t('Công ty cổ phần Én Việt', 'En Viet Joint Stock Company'),
+      period: '04/2024 - 06/2024',
+      location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
+      current: false,
+      responsibilities: [
+        t('Quản lý dự án phát triển web và mobile', 'Managing web and mobile development projects'),
+        t('Phát triển backend với Java và Spring Boot', 'Developing backend with Java and Spring Boot'),
+        t('Thiết kế và tối ưu hóa API/web service', 'Designing and optimizing API/web services'),
+        t('Làm việc với cơ sở dữ liệu MySQL và PostgreSQL', 'Working with MySQL and PostgreSQL databases'),
+      ],
+      techStack: ['Java', 'Spring Boot', 'MySQL', 'PostgreSQL', 'Docker'],
+    },
+    {
+      title: 'Software Engineer',
       company: 'AhaMove',
       period: '10/2023 - 03/2024',
       location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
@@ -55,20 +69,6 @@ const ExperienceSection = () => {
         t('Viết unit tests và integration tests', 'Writing unit tests and integration tests'),
       ],
       techStack: ['Java', 'Spring Boot', 'MongoDB', 'Kafka', 'AWS', 'Microservices'],
-    },
-    {
-      title: 'Software Engineer',
-      company: t('Công ty cổ phần Én Việt', 'En Viet Joint Stock Company'),
-      period: '04/2024 - 06/2024',
-      location: t('TP. Hồ Chí Minh', 'Ho Chi Minh City'),
-      current: false,
-      responsibilities: [
-        t('Quản lý dự án phát triển web và mobile', 'Managing web and mobile development projects'),
-        t('Phát triển backend với Java và Spring Boot', 'Developing backend with Java and Spring Boot'),
-        t('Thiết kế và tối ưu hóa API/web service', 'Designing and optimizing API/web services'),
-        t('Làm việc với cơ sở dữ liệu MySQL và PostgreSQL', 'Working with MySQL and PostgreSQL databases'),
-      ],
-      techStack: ['Java', 'Spring Boot', 'MySQL', 'PostgreSQL', 'Docker'],
     },
   ];
 
