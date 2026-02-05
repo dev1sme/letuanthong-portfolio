@@ -45,10 +45,10 @@ const ExperienceSection = () => {
     },
     {
       key: 3,
-      title: 'Full-time International Student - Information Technology',
+      title: 'Full-time International Student',
       company: t('Chương trình trao đổi sinh viên', 'International student exchange programs'),
       period: '06/2024 - 12/2024',
-      location: t('Trung Quốc - Hàn Quốc', 'China - Korea'),
+      location: t('Trung - Hàn', 'China - Korea'),
       current: false,
       responsibilities: [
         // t('Quản lý dự án phát triển web và mobile', 'Managing web and mobile development projects'),
