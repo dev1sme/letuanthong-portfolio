@@ -42,7 +42,7 @@ const Footer = () => {
           {/* Social Links - at the very bottom */}
           <div className="flex gap-4 flex-wrap justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -51,7 +51,7 @@ const Footer = () => {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -60,7 +60,7 @@ const Footer = () => {
               <Linkedin size={18} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/letuanthong"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -69,7 +69,7 @@ const Footer = () => {
               <Instagram size={18} />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/letuanthong.35"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -78,7 +78,7 @@ const Footer = () => {
               <Facebook size={18} />
             </a>
             <a
-              href="https://x.com"
+              href="https://x.com/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

@@ -136,7 +136,7 @@ const HeroSection = () => {
             variants={itemVariants}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
@@ -145,7 +145,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
@@ -154,7 +154,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/letuanthong"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
@@ -163,7 +163,7 @@ const HeroSection = () => {
               <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/letuanthong.35"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
@@ -172,7 +172,7 @@ const HeroSection = () => {
               <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
             <a
-              href="https://x.com"
+              href="https://x.com/dev1sme"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 sm:p-3 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"

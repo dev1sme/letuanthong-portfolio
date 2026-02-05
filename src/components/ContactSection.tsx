@@ -31,11 +31,11 @@ const ContactSection = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, label: 'GitHub', href: 'https://github.com' },
-    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
-    { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
-    { icon: Twitter, label: 'X (Twitter)', href: 'https://x.com' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/dev1sme' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/dev1sme' },
+    { icon: Facebook, label: 'Facebook', href: 'https://facebook.com/letuanthong.35' },
+    { icon: Instagram, label: 'Instagram', href: 'https://instagram.com/letuanthong' },
+    { icon: Twitter, label: 'X (Twitter)', href: 'https://x.com/dev1sme' },
   ];
 
   return (
